@@ -138,7 +138,7 @@ void welcomeMessage()
     headMessage("Welcome");
     printf("\n\t\t      **-**-**-**-**-**-**-**-**-**-**-**-**-**-**");
     printf("\n\t\t                       - CREDIT -              ");
-    printf("\n\t\t                   61010010 & 61010036              ");
+    printf("\n\t\t                         BearKS                ");
     printf("\n\t\t      **-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
     printf("\n\t\t           .....Enter any key to continue.....");
     getch();
