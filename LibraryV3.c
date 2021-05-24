@@ -156,10 +156,10 @@ void menu()
         headMessage("MAIN MENU");
         printf("\t........................................................................\n\n");
 		printf("\t>> BOOKS <<             >> STUDENTS <<            >> ISSUE BOOK <<\n\n");
-		printf("\t<1> Add New Book        <4> Add New Student       <7> Issue Book\n");
-		printf("\t<2> View Books          <5> View Students         <8> View Overdue Books\n");
-		printf("\t<3> Search Books        <6> Search Students       <9> Return Book\n");
-		printf("\t<10> Delete Books                                                 \n");
+		printf("\t<1> Add New Book        <5> Add New Student       <8> Issue Book\n");
+		printf("\t<2> View Books          <6> View Students         <9> View Overdue Books\n");
+		printf("\t<3> Search Books        <7> Search Students       <10> Return Book\n");
+		printf("\t<4> Delete Books                                                 \n");
 		printf("\t........................................................................\n\n");
 		printf("\t>> OTHER <<\n\n");
 		printf("\t<11> Update Account\n\t<0> Exit\n");
@@ -177,26 +177,26 @@ void menu()
 		case 3:
 			(books = fopen("Books.txt", "r")) == NULL ? menu("No Book Records Exist") : searchBooks();
 			break;
-		case 10:
+		case 4:
 			deleteBook();
 			break;
-		case 4:
+		case 5:
 			addStudentInfoInDataBase();
 			break;
-		case 5:
+		case 6:
 			(students = fopen("Students.txt", "r")) == NULL ? menu("No Student Records Exist") : viewStudents();
 			break;
-		case 6:
+		case 7:
 			(students = fopen("Students.txt", "r")) == NULL ? menu("No Student Records Exist") : searchStudents();
 			break;
-		case 7:
+		case 8:
 			(students = fopen("Students.txt", "r")) == NULL ? menu("No Student Records Exist") :
 			(books = fopen("Books.txt", "r")) == NULL ? menu("No Book Records Exist") : issueBook();
 			break;
-		case 8:
+		case 9:
 			(issues = fopen("Issues.txt", "r")) == NULL ? menu("No Issue Records Exist") : view_overdue_books();
 			break;
-		case 9:
+		case 10:
 			(issues = fopen("Issues.txt", "r")) == NULL ? menu("No Issue Records Exist") : returnBook();
 			break;
 		case 11:
